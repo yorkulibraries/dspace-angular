@@ -64,6 +64,7 @@
 
   a {
     color: var(--ds-home-news-link-color);
+    cursor: pointer;
 
     @include hover {
       color: var(--ds-home-news-link-hover-color);
