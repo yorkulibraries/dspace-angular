@@ -3,3 +3,16 @@ rest:
   host: api7.dspace.org
   port: 443
   nameSpace: /server
+
+################################################
+# Enable optional features for demo7.dspace.org
+################################################
+
+# Enable Item access status badges
+item:
+  showAccessStatuses: true
+
+# Enable media viewer plugin
+mediaViewer:
+  image: true
+  video: true
