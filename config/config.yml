@@ -16,3 +16,8 @@ item:
 mediaViewer:
   image: true
   video: true
+
+# Enable Markdown and MathJax
+markdown:
+  enabled: true
+  mathjax: true
