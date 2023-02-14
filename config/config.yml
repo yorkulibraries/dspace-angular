@@ -8,6 +8,12 @@ rest:
 # Enable optional features for demo7.dspace.org
 ################################################
 
+# Enable anonymous user SSR cache for up to 500 pages.
+cache:
+  serverSide:
+    anonymousCache:
+      max: 500
+
 # Enable Item access status badges
 item:
   showAccessStatuses: true
@@ -21,3 +27,9 @@ mediaViewer:
 markdown:
   enabled: true
   mathjax: true
+
+# Enable SRSC vocabulary in search filters
+vocabularies:
+  - filter: 'subject'
+    vocabulary: 'srsc'
+    enabled: true
