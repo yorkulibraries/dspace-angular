@@ -3,3 +3,6 @@ rest:
   host: api7.dspace.org
   port: 443
   nameSpace: /server
+ui:
+  altmetric: https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js
+  plumx: https://cdn.plu.mx/widget-popup.js

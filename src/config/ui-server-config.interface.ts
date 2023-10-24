@@ -13,4 +13,9 @@ export class UIServerConfig extends ServerConfig {
 
   // Trust X-FORWARDED-* headers from proxies
   useProxies: boolean;
+
+  // Altmetric script URL
+  altmetric?: string;
+  // Plumx script URL
+  plumx?: string;
 }

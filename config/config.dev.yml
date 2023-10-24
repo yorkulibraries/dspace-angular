@@ -1,0 +1,32 @@
+themes:
+  - name: yorkspace
+    headTags:
+    - tagName: link
+      attributes:
+        rel: icon
+        href: https://www.yorku.ca/wp-content/themes/york2020/favicon.ico
+        sizes: any
+    - tagName: link
+      attributes:
+        rel: apple-touch-icon
+        href: https://www.yorku.ca/wp-content/themes/york2020/apple-touch-icon.png
+languages:
+  - code: en
+    label: English
+    active: true
+  - code: fr
+    label: Français
+    active: true
+homePage:
+  recentSubmissions:
+    # The number of item showing in recent submission components
+    pageSize: 5
+    # Sort record of recent submission
+    sortField: 'dc.date.accessioned'
+  topLevelCommunityList:
+    # No. of communities to list per page on the home page
+    # This will always round to the nearest number from the list of page sizes. e.g. if you set it to 7 it'll use 10
+    pageSize: 5000
+communityList:
+  # No. of communities to list per expansion (show more)
+  pageSize: 5000
