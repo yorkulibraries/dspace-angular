@@ -159,6 +159,8 @@ The same settings can also be overwritten by setting system environment variable
 ```bash
 export DSPACE_HOST=api7.dspace.org
 export DSPACE_UI_PORT=4200
+export DSPACE_UI_ALTMETRIC=https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js
+export DSPACE_UI_PLUMX=https://cdn.plu.mx/widget-popup.js
 ```
 
 The priority works as follows: **environment variable** overrides **variable in `.env` file** overrides external config set by `DSPACE_APP_CONFIG_PATH` overrides **`config.(prod or dev).yml`**

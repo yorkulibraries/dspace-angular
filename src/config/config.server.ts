@@ -221,6 +221,8 @@ export const buildAppConfig = (destConfigPath?: string): AppConfig => {
   appConfig.ui.port = isNotEmpty(ENV('PORT', true)) ? getNumberFromString(ENV('PORT', true)) : appConfig.ui.port;
   appConfig.ui.nameSpace = isNotEmpty(ENV('NAMESPACE', true)) ? ENV('NAMESPACE', true) : appConfig.ui.nameSpace;
   appConfig.ui.ssl = isNotEmpty(ENV('SSL', true)) ? getBooleanFromString(ENV('SSL', true)) : appConfig.ui.ssl;
+  appConfig.ui.altmetric = isNotEmpty(ENV('ALTMETRIC', true)) ? ENV('ALTMETRIC', true) : appConfig.ui.altmetric;
+  appConfig.ui.plumx = isNotEmpty(ENV('PLUMX', true)) ? ENV('PLUMX', true) : appConfig.ui.plumx;
 
   // apply existing non convention REST environment variables
   appConfig.rest.host = isNotEmpty(ENV('REST_HOST', true)) ? ENV('REST_HOST', true) : appConfig.rest.host;

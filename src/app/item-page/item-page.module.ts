@@ -60,6 +60,7 @@ import { ThemedItemAlertsComponent } from './alerts/themed-item-alerts.component
 import {
   ThemedFullFileSectionComponent
 } from './full/field-components/file-section/themed-full-file-section.component';
+import { ItemPageMetricsFieldComponent } from './simple/field-components/specific-field/metrics/item-page-metrics-field/item-page-metrics-field.component';
 
 const ENTRY_COMPONENTS = [
   // put only entry components that use custom decorator
@@ -102,6 +103,7 @@ const DECLARATIONS = [
   OrcidQueueComponent,
   ItemAlertsComponent,
   ThemedItemAlertsComponent,
+  ItemPageMetricsFieldComponent,
   BitstreamRequestACopyPageComponent,
 ];
 
