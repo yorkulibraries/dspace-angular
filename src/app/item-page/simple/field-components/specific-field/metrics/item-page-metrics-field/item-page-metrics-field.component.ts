@@ -1,7 +1,7 @@
 import { Component, Input, Inject, OnInit } from '@angular/core';
-import { AltmetricMenuItemModel } from 'src/app/shared/menu/menu-item/models/altmetric.model';
 import { Item } from 'src/app/core/shared/item.model';
 import { AppConfig, APP_CONFIG } from 'src/config/app-config.interface';
+declare var document: any;
 
 @Component({
   selector: 'ds-item-page-metrics-field',
@@ -9,27 +9,47 @@ import { AppConfig, APP_CONFIG } from 'src/config/app-config.interface';
 })
 export class ItemPageMetricsFieldComponent implements OnInit {
 
-  @Input() metrics = { url: '', disabled: true } as AltmetricMenuItemModel;
   @Input() item: Item;
+  itemIdentifier: {name: string, value: string};
 
   constructor(@Inject(APP_CONFIG) private appConfig: AppConfig) {}
 
   ngOnInit() {
-    this.metrics.url = this.item.firstMetadataValue('dc.identifier.uri') ? (new URL(this.item.firstMetadataValue('dc.identifier.uri')).pathname) : '';
-    if (this.metrics.url !== '') {
-      this.metrics.disabled = false;
-    }
-
+    this.itemIdentifier = this.gettingIdentifier().find(item => item.value !== null);
+    
     this.loadExternalScript(this.appConfig.ui.altmetric)
     .catch(error => console.error('Script loading error:', error));
-
     this.loadExternalScript(this.appConfig.ui.plumx)
     .catch(error => console.error('Script loading error:', error));
   }
 
+  private getIndetifierValue(inputString: string, regex: RegExp): string | null {
+    if (inputString !==undefined && regex.test(inputString)) {
+      return new URL(inputString).pathname;
+    } else {
+      return null;
+    }
+  }
+
+  private gettingIdentifier(): any[] {
+    return [
+      {
+        name: 'data-doi',
+        value: this.getIndetifierValue(this.item.firstMetadataValue('dc.identifier.doi'), /https?:\/\/(dx\.)?doi\.org\//gi),
+      },
+      {
+        name: 'data-doi',
+        value: this.getIndetifierValue(this.item.firstMetadataValue('dc.identifier.uri'),/https?:\/\/(dx\.)?doi\.org\//gi),
+      },
+      {
+        name: 'data-handle',
+        value: this.getIndetifierValue(this.item.firstMetadataValue('dc.identifier.uri'),/http?:\/\/hdl\.handle\.net\//gi),
+      },
+    ];
+  }
+
   private loadExternalScript(scriptUrl: string): Promise<void> {
     return new Promise<void>((resolve, reject) => {
-      if (!this.metrics.disabled) {
         const script = document.createElement('script');
         script.src = scriptUrl;
         script.onload = () => {
@@ -37,13 +57,9 @@ export class ItemPageMetricsFieldComponent implements OnInit {
           resolve();
         };
         script.onerror = (error) => {
-          this.metrics.disabled = true;
           reject(error);
         };
         document.body.appendChild(script);
-      } else {
-        resolve();
-      }
-    });
+      });
   }
 }
