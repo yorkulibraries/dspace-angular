@@ -1,70 +1,36 @@
 {
   "admin.registries.metadata.description": "Le registre de métadonnées présente une liste à jour de tous les champs de métadonnées disponibles dans le dépôt. Ces champs peuvent être répartis entre plusieurs schémas. Le schéma Dublin Core qualifié est toutefois requis dans YorkSpace.",
-
   "footer.link.dspace": "Logiciel YorkSpace",
-
   "forgot-email.form.info": "Créer un compte pour vous abonner à des collections afin de recevoir des mises à jour via courrier électronique ainsi que pour déposer de nouveaux Items dans YorkSpace.",
-
   "home.top-level-communities.head": "Communautés dans YorkSpace",
-
   "info.feedback.info": "Merci de nous faire part de votre avis sur le système YorkSpace. Vos commentaires sont appréciés !",
-
   "login.form.orcid": "Connectez-vous avec ORCID",
-
   "login.form.header": "Se connecter à YorkSpace",
-
   "logout.form.header": "Se déconnecter de YorkSpace",
-
   "menu.section.browse_global": "Tout YorkSpace",
-
   "mydspace.breadcrumbs": "Mon compte YorkSpace",
-
   "mydspace.search-form.placeholder": "Rechercher dans mon compte YorkSpace...",
-
   "mydspace.title": "Mon compte YorkSpace",
-
   "nav.mydspace": "Mon compte YorkSpace",
-
   "register-page.registration.info": "Créer un compte pour pouvoir vous abonner aux collections et recevoir les nouveautés via courrier électronique ainsi que déposer de nouveaux Items dans YorkSpace.",
-
   "repository.title.prefix": "YorkSpace :: ",
-
   "repository.title.prefixDSpace": "YorkSpace :: ",
-
   "search.form.search_dspace": "Recherche dans YorkSpace",
-
   "search.form.scope.all": "Tout le dépôt YorkSpace",
-
   "submission.import-external.page.hint": "Entrer votre recherche ci-dessus pour rechercher des éléments du web à importer dans YorkSpace",
-
   "submission.import-external.back-to-my-dspace": "Retour à mon compte YorkSpace",
-
   "title": "YorkSpace",
-
   "yorkspace.footer.copyright": "Tous les éléments du dépôt institutionnel de YorkSpace sont protégés par le droit d'auteur, avec tous les droits réservés, sauf indication contraire explicite.",
-
   "yorkspace.home.description.part1": "YorkSpace est le Dépôt institutionnel de l'Université York. Il soutient la",
-
   "yorkspace.home.description.part2": "en offrant aux membres de la communauté de York un espace pour préserver leurs recherches en ligne dans un contexte institutionnel.",
-
   "yorkspace.home.yorku-senate-policy-open-access-url": "https://www.library.yorku.ca/web/research-learn/research/oapublishing/york-university-senate-policy-on-open-access/",
-
   "yorkspace.home.yorku-senate-policy-open-access": "Politique du Sénat de l'Université York sur l'accès libre",
-
   "yorkspace.home.photo-credit.photo": "Photo",
-
   "yorkspace.home.photo-credit.by": "by",
-
   "yorkspace.home.photo-credit.on": "on",
-
   "menu.section.about": "À propos de",
-
   "menu.section.about_yorkspace": "À propos de YorkSpace",
-
   "menu.section.yorkspace_procedures": "Procédures de YorkSpace",
-
   "menu.section.yorkspace_licence": "Licence de YorkSpace",
-
   "menu.section.yorkspace_help_resources": "Ressources d'aide pour YorkSpace",
-
 }

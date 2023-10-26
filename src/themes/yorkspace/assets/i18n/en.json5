@@ -1,66 +1,34 @@
 {
   "menu.section.browse_global": "Browse YorkSpace",
-
   "repository.title.prefix": "YorkSpace :: ",
-
   "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with YorkSpace. If the error persists, contact the administrator",
-
   "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, YorkSpace requires the qualified Dublin Core schema.",
-
   "dso-selector.set-scope.community.button": "Search all of YorkSpace",
-
   "home.top-level-communities.head": "Communities in YorkSpace",
-
   "info.feedback.info": "Thanks for sharing your feedback about the YorkSpace system. Your comments are appreciated!",
-
   "login.form.header": "Please log in to YorkSpace",
-
   "logout.form.header": "Log out from YorkSpace",
-
   "mydspace.breadcrumbs": "My YorkSpace",
-
   "mydspace.title": "My YorkSpace",
-
   "nav.browse.header": "All of YorkSpace",
-
   "nav.mydspace": "My YorkSpace",
-
   "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to YorkSpace.",
-
   "repository.title.prefixDSpace": "YorkSpace ::",
-
   "search.form.scope.all": "All of YorkSpace",
-
   "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to YorkSpace.",
-
   "submission.import-external.back-to-my-dspace": "Back to My YorkSpace",
-
   "title": "YorkSpace",
-
   "yorkspace.footer.copyright": "All items in the YorkSpace institutional repository are protected by copyright, with all rights reserved except where explicitly noted.",
-
   "yorkspace.home.description.part1": "YorkSpace is York University's Institutional Repository. It supports",
-
   "yorkspace.home.description.part2": "by providing York community members with a place to preserve their research online in an institutional context.",
-
   "yorkspace.home.yorku-senate-policy-open-access-url": "https://www.library.yorku.ca/web/research-learn/research/oapublishing/york-university-senate-policy-on-open-access/",
-
   "yorkspace.home.yorku-senate-policy-open-access": "York University's Senate Policy on Open Access",
-
   "yorkspace.home.photo-credit.photo": "Photo",
-
   "yorkspace.home.photo-credit.by": "by",
-
   "yorkspace.home.photo-credit.on": "on",
-
   "menu.section.about": "About",
-
   "menu.section.about_yorkspace": "About YorkSpace",
-
   "menu.section.yorkspace_procedures": "YorkSpace Procedures",
-
   "menu.section.yorkspace_licence": "YorkSpace License",
-
   "menu.section.yorkspace_help_resources": "YorkSpace Help Resources",
-
 }
