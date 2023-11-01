@@ -1,5 +1,6 @@
 <ng-container *ngIf="itemIdentifier">
-  <div *ngIf="itemIdentifier.name === 'data-handle'" data-badge-type='medium-donut' class="altmetric-embed" data-badge-details='right' [attr.data-handle]="itemIdentifier.value"></div>
-  <div *ngIf="itemIdentifier.name === 'data-doi'" data-badge-type='medium-donut' class="altmetric-embed" data-badge-details='right' [attr.data-doi]="itemIdentifier.value"></div>
   <a *ngIf="itemIdentifier.name === 'data-doi'" id="plumx" class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{itemIdentifier.value}}" data-popup="right" data-hide-when-empty="true" aria-label="plumx"></a>
+</ng-container>
+<ng-container *ngIf="itemIdentifier">
+  <div *ngIf="itemIdentifier.name === 'data-doi'" data-badge-type='medium-donut' class="altmetric-embed" data-badge-details='right' [attr.data-doi]="itemIdentifier.value"></div>
 </ng-container>

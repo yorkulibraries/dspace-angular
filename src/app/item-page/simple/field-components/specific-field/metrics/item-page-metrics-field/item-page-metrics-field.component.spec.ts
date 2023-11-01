@@ -7,11 +7,11 @@ import { APP_CONFIG } from 'src/config/app-config.interface';
 describe('ItemPageMetricsFieldComponent', () => {
   let component: ItemPageMetricsFieldComponent;
   let fixture: ComponentFixture<ItemPageMetricsFieldComponent>;
-  const URI = '/10.13039/501100000289';
+  const URI = '/123456789/123';
 
   const appConfigProvider = {
     provide: APP_CONFIG,
-    useValue: { ui: { altmetric: 'altmetric-url', plumx: 'plumx-url' } }
+    useValue: { ui: { altmetric: 'https://altmetric-url-external', plumx: 'https://plumx-url-external' } }
   };
 
   beforeEach(async () => {
