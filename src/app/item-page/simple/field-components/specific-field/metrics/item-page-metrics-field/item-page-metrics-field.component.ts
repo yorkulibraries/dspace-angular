@@ -1,7 +1,6 @@
 import { Component, Input, Inject, OnInit, ElementRef } from '@angular/core';
 import { Item } from 'src/app/core/shared/item.model';
 import { AppConfig, APP_CONFIG } from 'src/config/app-config.interface';
-declare var document: any;
 
 @Component({
   selector: 'ds-item-page-metrics-field',
@@ -16,7 +15,7 @@ export class ItemPageMetricsFieldComponent implements OnInit {
 
   ngOnInit() {
     this.itemIdentifier = this.gettingIdentifier().find(item => item.value !== null);
-    
+
     this.loadExternalScript(this.appConfig.ui.plumx)
     .catch(error => console.error('Script loading error:', error));
     this.loadExternalScript(this.appConfig.ui.altmetric)
@@ -25,7 +24,7 @@ export class ItemPageMetricsFieldComponent implements OnInit {
 
   private getIndetifierValue(identifier_doi: string | string[], regex: RegExp): string | null {
     let identifier = Array.isArray(identifier_doi) ? identifier_doi.find(value => regex.test(value)) : identifier_doi;
-    if (identifier !==undefined && regex.test(identifier)) {
+    if (identifier !== undefined && regex.test(identifier)) {
       return new URL(identifier).pathname;
     } else {
       return null;
@@ -58,6 +57,10 @@ export class ItemPageMetricsFieldComponent implements OnInit {
     return new Promise<void>((resolve, reject) => {
       const script = this.elementRef.nativeElement.ownerDocument.createElement('script');
       script.src = scriptUrl;
+      script.onload = () => {
+        console.log('External script has been loaded: ' + scriptUrl);
+        resolve();
+      };
       this.elementRef.nativeElement.ownerDocument.body.appendChild(script);
       });
   }

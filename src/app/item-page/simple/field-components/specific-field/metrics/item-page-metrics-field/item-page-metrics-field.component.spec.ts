@@ -11,7 +11,7 @@ describe('ItemPageMetricsFieldComponent', () => {
 
   const appConfigProvider = {
     provide: APP_CONFIG,
-    useValue: { ui: { altmetric: 'https://altmetric-url-external', plumx: 'https://plumx-url-external' } }
+    useValue: { ui: { altmetric: 'https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js', plumx: 'https://cdn.plu.mx/widget-popup.js' } }
   };
 
   beforeEach(async () => {
