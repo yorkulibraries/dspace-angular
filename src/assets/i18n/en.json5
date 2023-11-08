@@ -32,7 +32,7 @@
 
   "error-page.description.404": "page not found",
 
-  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with DSpace. If the error persists, contact the administrator",
+  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with YorkSpace. If the error persists, contact the administrator",
 
   "access-status.embargo.listelement.badge": "Embargo",
 
@@ -144,7 +144,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Metadata registry",
 
-  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, DSpace requires the qualified Dublin Core schema.",
+  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, YorkSpace requires the qualified Dublin Core schema.",
 
   "admin.registries.metadata.form.create": "Create metadata schema",
 
@@ -1468,7 +1468,7 @@
 
   "dso-selector.set-scope.community.head": "Select a search scope",
 
-  "dso-selector.set-scope.community.button": "Search all of DSpace",
+  "dso-selector.set-scope.community.button": "Search all of YorkSpace",
 
   "dso-selector.set-scope.community.or-divider": "or",
 
@@ -1836,7 +1836,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in YorkSpace",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -1870,7 +1870,7 @@
 
   "info.feedback.title": "Feedback",
 
-  "info.feedback.info": "Thanks for sharing your feedback about the DSpace system. Your comments are appreciated!",
+  "info.feedback.info": "Thanks for sharing your feedback about the YorkSpace system. Your comments are appreciated!",
 
   "info.feedback.email_help": "This address will be used to follow up on your feedback.",
 
@@ -2764,7 +2764,7 @@
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
-  "login.form.header": "Please log in to DSpace",
+  "login.form.header": "Please log in to YorkSpace",
 
   "login.form.new-user": "New user? Click here to register.",
 
@@ -2784,7 +2784,7 @@
 
   "login.breadcrumbs": "Login",
 
-  "logout.form.header": "Log out from DSpace",
+  "logout.form.header": "Log out from YorkSpace",
 
   "logout.form.submit": "Log out",
 
@@ -2816,7 +2816,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "All of DSpace",
+  "menu.section.browse_global": "Browse YorkSpace",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -2950,7 +2950,7 @@
 
   "metadata-export-search.submit.error": "Starting the export has failed",
 
-  "mydspace.breadcrumbs": "MyDSpace",
+  "mydspace.breadcrumbs": "My YorkSpace",
 
   "mydspace.description": "",
 
@@ -3022,7 +3022,7 @@
 
   "mydspace.status.mydspaceWorkspace": "Workspace",
 
-  "mydspace.title": "MyDSpace",
+  "mydspace.title": "My YorkSpace",
 
   "mydspace.upload.upload-failed": "Error creating new workspace. Please verify the content uploaded before retry.",
 
@@ -3034,7 +3034,7 @@
 
   "mydspace.view-btn": "View",
 
-  "nav.browse.header": "All of DSpace",
+  "nav.browse.header": "All of YorkSpace",
 
   "nav.community-browse.header": "By Community",
 
@@ -3050,7 +3050,7 @@
 
   "nav.main.description": "Main navigation bar",
 
-  "nav.mydspace": "MyDSpace",
+  "nav.mydspace": "My YorkSpace",
 
   "nav.profile": "Profile",
 
@@ -3410,7 +3410,7 @@
 
   "register-page.registration.header": "New user registration",
 
-  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to DSpace.",
+  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to YorkSpace.",
 
   "register-page.registration.email": "Email Address *",
 
@@ -3494,7 +3494,7 @@
 
   "repository.title": "DSpace Repository",
 
-  "repository.title.prefix": "DSpace Repository :: ",
+  "repository.title.prefix": "YorkSpace :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -3826,7 +3826,7 @@
 
   "search.form.search_dspace": "All repository",
 
-  "search.form.scope.all": "All of DSpace",
+  "search.form.scope.all": "All of YorkSpace",
 
   "search.results.head": "Search Results",
 
@@ -3960,9 +3960,9 @@
 
   "submission.import-external.title.none": "Import metadata from an external source",
 
-  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to DSpace.",
+  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to YorkSpace.",
 
-  "submission.import-external.back-to-my-dspace": "Back to MyDSpace",
+  "submission.import-external.back-to-my-dspace": "Back to My YorkSpace",
 
   "submission.import-external.search.placeholder": "Search the external source",
 
@@ -4726,7 +4726,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  "title": "YorkSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5216,4 +5216,31 @@
 
   "access-control-option-end-date-note": "Select the date until which the related access condition is applied",
 
+  "repository.title.prefixDSpace": "YorkSpace ::",
+
+  "yorkspace.footer.copyright": "All items in the YorkSpace institutional repository are protected by copyright, with all rights reserved except where explicitly noted.",
+
+  "yorkspace.home.description.part1": "YorkSpace is York University's Institutional Repository. It supports",
+
+  "yorkspace.home.description.part2": "by providing York community members with a place to preserve their research online in an institutional context.",
+
+  "yorkspace.home.yorku-senate-policy-open-access-url": "https://www.library.yorku.ca/web/research-learn/research/oapublishing/york-university-senate-policy-on-open-access/",
+
+  "yorkspace.home.yorku-senate-policy-open-access": "York University's Senate Policy on Open Access",
+
+  "yorkspace.home.photo-credit.photo": "Photo",
+
+  "yorkspace.home.photo-credit.by": "by",
+
+  "yorkspace.home.photo-credit.on": "on",
+
+  "menu.section.about": "About",
+
+  "menu.section.about_yorkspace": "About YorkSpace",
+
+  "menu.section.yorkspace_procedures": "YorkSpace Procedures",
+
+  "menu.section.yorkspace_licence": "YorkSpace License",
+
+  "menu.section.yorkspace_help_resources": "YorkSpace Help Resources",
 }
