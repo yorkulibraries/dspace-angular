@@ -1,5 +1,86 @@
+ui:
+  ssl: false
+  host: 0.0.0.0
+  port: 4000
+  # NOTE: Space is capitalized because 'namespace' is a reserved string in TypeScript
+  nameSpace: /
+  # The rateLimiter settings limit each IP to a 'max' of 500 requests per 'windowMs' (1 minute).
+  rateLimiter:
+    windowMs: 60000 # 1 minute
+    max: 500 # limit each IP to 500 requests per windowMs
+  # Trust X-FORWARDED-* headers from proxies (default = true)
+  useProxies: true
+
 rest:
   ssl: true
   host: api7.dspace.org
   port: 443
   nameSpace: /server
+
+themes:
+  - name: yorkspace
+    headTags:
+    - tagName: link
+      attributes:
+        rel: icon
+        href: https://www.yorku.ca/wp-content/themes/york2020/favicon.ico
+        sizes: any
+    - tagName: link
+      attributes:
+        rel: apple-touch-icon
+        href: https://www.yorku.ca/wp-content/themes/york2020/apple-touch-icon.png
+
+languages:
+  - code: en
+    label: English
+    active: true
+  - code: fr
+    label: Français
+    active: true
+
+homePage:
+  recentSubmissions:
+    # The number of item showing in recent submission components
+    pageSize: 5
+    # Sort record of recent submission
+    sortField: 'dc.date.accessioned'
+  topLevelCommunityList:
+    # No. of communities to list per page on the home page
+    # This will always round to the nearest number from the list of page sizes. e.g. if you set it to 7 it'll use 10
+    pageSize: 100
+
+communityList:
+  # No. of communities to list per expansion (show more)
+  pageSize: 100
+
+mediaViewer:
+  image: false
+  video: false
+
+info:
+  # Whether the end user agreement is required before users may use the repository.
+  # If enabled, the user will be required to accept the agreement before they can use the repository.
+  # If disabled, the page will not exist and no agreement is required to use the repository
+  enableEndUserAgreement: false
+  # Whether the privacy statement should exist or not.
+  enablePrivacyStatement: false
+
+cache:
+  serverSide:
+    botCache:
+      max: 1000
+      timeToLive: 86400000 # 1 day
+      allowStale: true
+    anonymousCache:
+      max: 1000
+      timeToLive: 30000 # 30 seconds
+      allowStale: false
+
+item:
+  showAccessStatuses: true
+  bitstream:
+    pageSize: 20
+
+markdown:
+  enabled: true
+  mathjax: true
