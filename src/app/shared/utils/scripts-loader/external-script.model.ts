@@ -5,6 +5,7 @@ export interface ExternalScript {
 
 export enum ExternalScriptsNames {
   ALTMETRIC = 'altmetric-embed',
+  PLUMX = 'plumx-widget-all',
 }
 
 export enum ExternalScriptsStatus {
@@ -17,5 +18,9 @@ export const ExternalScriptsList: ExternalScript[] = [
   {
     name: ExternalScriptsNames.ALTMETRIC,
     src: 'https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js',
+  },
+  {
+    name: ExternalScriptsNames.PLUMX,
+    src: 'https://cdn.plu.mx/widget-all.js',
   },
 ];
