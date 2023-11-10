@@ -284,6 +284,7 @@ import { BitstreamListItemComponent } from './object-list/bitstream-list-item/bi
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ThemedUserMenuComponent } from './auth-nav-menu/user-menu/themed-user-menu.component';
 import { ThemedLangSwitchComponent } from './lang-switch/themed-lang-switch.component';
+import { ExternalScriptLoaderService } from './utils/scripts-loader/external-script-loader.service';
 
 const MODULES = [
   CommonModule,
@@ -473,7 +474,8 @@ const ENTRY_COMPONENTS = [
 const PROVIDERS = [
   TruncatableService,
   MockAdminGuard,
-  AbstractTrackableComponent
+  AbstractTrackableComponent,
+  ExternalScriptLoaderService,
 ];
 
 const DIRECTIVES = [
