@@ -24,7 +24,7 @@ export class ItemPageMetricsFieldComponent implements OnInit {
 
   private getIndetifierValue(identifier_doi: string | string[], regex: RegExp): string | null {
     let identifier = Array.isArray(identifier_doi) ? identifier_doi.find(value => regex.test(value)) : identifier_doi;
-    if (identifier !== undefined && regex.test(identifier)) {
+    if (identifier !== undefined) {
       return new URL(identifier).pathname;
     } else {
       return null;
@@ -32,7 +32,7 @@ export class ItemPageMetricsFieldComponent implements OnInit {
   }
 
   private gettingIdentifier(): any[] {
-    const regExp = /https?:\/\/(dx\.)?doi\.org\//gi;
+    const regExp = /http(s?)?:\/\/(dx\.)?doi\.org\//gi;
     return [
       {
         name: 'data-doi',
