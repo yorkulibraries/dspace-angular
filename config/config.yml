@@ -13,7 +13,7 @@ ui:
 
 rest:
   ssl: true
-  host: api7.dspace.org
+  host: demo.dspace.org
   port: 443
   nameSpace: /server
 
