@@ -12,16 +12,23 @@
     <div class="content-container">
       <p class="m-0">
       </p>
-      <ul class="footer-info list-unstyled small d-flex justify-content-center mb-0">
+      <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <button class="btn btn-link text-white" type="button" (click)="showCookieSettings()">
+            {{ 'footer.link.cookies' | translate}}
+          </button>
+        </li>
         <li *ngIf="showPrivacyPolicy">
-          <a class="text-white" routerLink="info/privacy">{{ 'footer.link.privacy-policy' | translate}}</a>
+          <a class="btn text-white"
+             routerLink="info/privacy">{{ 'footer.link.privacy-policy' | translate}}</a>
         </li>
         <li *ngIf="showEndUserAgreement">
-          <a class="text-white" routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' |
-            translate}}</a>
+          <a class="btn text-white"
+             routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' | translate}}</a>
         </li>
-        <li>
-          <a class="text-white" routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
+        <li *ngIf="showSendFeedback$ | async">
+          <a class="btn text-white"
+             routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
         </li>
       </ul>
     </div>
