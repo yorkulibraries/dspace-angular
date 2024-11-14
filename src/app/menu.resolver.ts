@@ -143,6 +143,19 @@ export class MenuResolver implements Resolve<boolean> {
         } as LinkMenuItemModel
       },
       {
+        id: `about_yorkspace_link_5`,
+        parentID: 'about_yorkspace',
+        active: false,
+        visible: true,
+        model: {
+          type: MenuItemType.EXTERNAL,
+          text: `menu.section.yorkspace_deposit_form`,
+          href: `https://forms.office.com/r/iHbJxcttkU`,
+          disabled: false,
+          link: `https://forms.office.com/r/iHbJxcttkU`
+        } as LinkMenuItemModel
+      },
+      {
         id: `about_yorkspace_link_4`,
         parentID: 'about_yorkspace',
         active: false,
