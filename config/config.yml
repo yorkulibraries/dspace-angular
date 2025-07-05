@@ -4,19 +4,6 @@ rest:
   port: 443
   nameSpace: /server
 
-themes:
-  - name: yorkspace
-    headTags:
-    - tagName: link
-      attributes:
-        rel: icon
-        href: /assets/yorkspace/images/favicons/favicon.ico
-        sizes: any
-    - tagName: link
-      attributes:
-        rel: apple-touch-icon
-        href: /assets/yorkspace/images/favicons/apple-touch-icon.png
-
 languages:
   - code: en
     label: English
