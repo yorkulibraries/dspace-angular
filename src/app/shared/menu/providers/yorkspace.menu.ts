@@ -12,8 +12,8 @@ import {
   of,
 } from 'rxjs';
 
-import { TextMenuItemModel } from '../menu-item/models/text.model';
 import { ExternalLinkMenuItemModel } from '../menu-item/models/external-link.model';
+import { TextMenuItemModel } from '../menu-item/models/text.model';
 import { MenuItemType } from '../menu-item-type.model';
 import { PartialMenuSection } from '../menu-provider.model';
 import { AbstractExpandableMenuProvider } from './helper-providers/expandable-menu-provider';
