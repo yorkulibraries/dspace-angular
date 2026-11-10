@@ -30,7 +30,7 @@ export class YorkSpaceMenuProvider extends AbstractExpandableMenuProvider {
           type: MenuItemType.TEXT,
           text: 'menu.section.about',
         } as TextMenuItemModel,
-        icon: 'globe',
+        icon: 'info-circle',
         visible: true,
       },
     );
