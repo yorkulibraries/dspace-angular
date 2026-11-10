@@ -38,6 +38,7 @@ import { StatisticsMenuProvider } from './shared/menu/providers/statistics.menu'
 import { SystemWideAlertMenuProvider } from './shared/menu/providers/system-wide-alert.menu';
 import { WithdrawnReinstateItemMenuProvider } from './shared/menu/providers/withdrawn-reinstate-item.menu';
 import { WorkflowMenuProvider } from './shared/menu/providers/workflow.menu';
+import { YorkSpaceMenuProvider } from './shared/menu/providers/yorkspace.menu';
 
 /**
  * Represents and builds the menu structure for the three available menus (public navbar, admin sidebar and the dso edit
@@ -57,6 +58,7 @@ import { WorkflowMenuProvider } from './shared/menu/providers/workflow.menu';
  */
 export const MENUS = buildMenuStructure({
   [MenuID.PUBLIC]: [
+    YorkSpaceMenuProvider,
     CommunityListMenuProvider,
     BrowseMenuProvider,
     StatisticsMenuProvider,
